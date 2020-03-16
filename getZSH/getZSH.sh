@@ -11,4 +11,12 @@ wget  https://raw.githubusercontent.com/igoro00/Scripts/master/getZSH/zshrc -O ~
 sed -i -e 's|~|'$HOME'|g' ~/.zshrc
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.oh-my-zsh/themes/powerlevel10k
 wget  https://raw.githubusercontent.com/igoro00/Scripts/master/getZSH/p10k.zsh -O ~/.p10k.zsh
+echo ""
+echo ==========================
+echo "Please download, install and set one of these fonts as your terminal font"
+echo "  https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf"
+echo "  https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf"
+echo "  https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf"
+echo "  https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf"
+echo ""
 zsh
