@@ -6,6 +6,7 @@
 if [ -x "$(command -v dnf)" ]; then dnf install zsh wget git sed; fi #not tested
 if [ -x "$(command -v zypper)" ]; then zypper install zsh wget git sed; fi #not tested
 if [ -x "$(command -v apt-get)" ]; then apt-get -y install zsh wget git sed; fi
+if [ -x "$(command -v pacman)" ]; then pacman -S --noconfirm zsh wget git sed; fi
 sh -c "$(wget -O- https://raw.githubusercontent.com/igoro00/Scripts/master/getZSH/ohmyzsh.sh)"
 wget  https://raw.githubusercontent.com/igoro00/Scripts/master/getZSH/zshrc -O ~/.zshrc
 sed -i -e 's|~|'$HOME'|g' ~/.zshrc
