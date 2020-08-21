@@ -1,0 +1,7 @@
+alias ping='ping -c 6'
+alias sourcepy='source ./venv/bin/activate'
+alias cd..='cd ..'
+alias cls='clear'
+alias rm='rm -v'
+alias cp='cp -v'
+alias mv='mv -v'
