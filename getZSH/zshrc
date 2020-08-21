@@ -1,12 +1,23 @@
+setopt correct
+setopt extendedglob
+setopt nocaseglob
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export ZSH="~/.oh-my-zsh"
+export ZSH="/home/igor/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f /home/igor/.p10k.zsh ]] || source /home/igor/.p10k.zsh
+
+[[ ! -f /home/igor/.aliases ]] || source /home/igor/.aliases 
+
+bindkey "\e[1~" beginning-of-line
+bindkey "\e[4~" end-of-line 
