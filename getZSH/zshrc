@@ -8,16 +8,16 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export ZSH="/home/${USER}/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-[[ ! -f /home/${USER}/.p10k.zsh ]] || source /home/${USER}/.p10k.zsh
+[[ ! -f ${HOME}/.p10k.zsh ]] || source ${HOME}/.p10k.zsh
 
-[[ ! -f /home/${USER}/.aliases ]] || source /home/${USER}/.aliases 
+[[ ! -f ${HOME}/.aliases ]] || source ${HOME}/.aliases 
 
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line 
